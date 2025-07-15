@@ -5,10 +5,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AliExpress Deals</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="font-sans">
+<body>
+
+    <!-- Header -->
+    <div class="bg-red-500 flex items-center justify-between px-30 py-4 border-b">
+        <!-- Logo + Search -->
+        <div class="flex items-center gap-8">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sb900db0ad7604a83b297a51d9222905bm/624x160.png"
+                alt="AliExpress" class="h-9">
+            <!-- Search -->
+            <div class="relative w-[400px]">
+                <input type="text" placeholder="labubu big into energy"
+                    class="w-full pl-4 pr-10 py-2 border rounded-full text-sm focus:outline-none focus:ring-1 focus:ring-gray-400">
+                <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500">
+                    🔍
+                </button>
+            </div>
+
+
+            <!-- Right Items -->
+            <!-- Download App -->
+            <div class="flex items-center gap-2 cursor-pointer">
+                <span class="text-4xl"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"
+                        aria-hidden="false" focusable="false">
+                        <path
+                            d="M128 202.666667A74.666667 74.666667 0 0 1 202.666667 128h149.333333A74.666667 74.666667 0 0 1 426.666667 202.666667v149.333333a74.666667 74.666667 0 0 1-74.666667 74.666667h-149.333333A74.666667 74.666667 0 0 1 128 352v-149.333333zM202.666667 192a10.666667 10.666667 0 0 0-10.666667 10.666667v149.333333a10.666667 10.666667 0 0 0 10.666667 10.666667h149.333333a10.666667 10.666667 0 0 0 10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 0-10.666667-10.666667h-149.333333zM597.333333 202.666667A74.666667 74.666667 0 0 1 672 128h149.333333A74.666667 74.666667 0 0 1 896 202.666667v149.333333a74.666667 74.666667 0 0 1-74.666667 74.666667h-149.333333a74.666667 74.666667 0 0 1-74.666667-74.666667v-149.333333z m74.666667-10.666667a10.666667 10.666667 0 0 0-10.666667 10.666667v149.333333a10.666667 10.666667 0 0 0 10.666667 10.666667h149.333333a10.666667 10.666667 0 0 0 10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 0-10.666667-10.666667h-149.333333zM597.333333 672a74.666667 74.666667 0 0 1 74.666667-74.666667h149.333333a74.666667 74.666667 0 0 1 74.666667 74.666667v149.333333a74.666667 74.666667 0 0 1-74.666667 74.666667h-149.333333a74.666667 74.666667 0 0 1-74.666667-74.666667v-149.333333z m74.666667-10.666667a10.666667 10.666667 0 0 0-10.666667 10.666667v149.333333a10.666667 10.666667 0 0 0 10.666667 10.666667h149.333333a10.666667 10.666667 0 0 0 10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 0-10.666667-10.666667h-149.333333zM128 672A74.666667 74.666667 0 0 1 202.666667 597.333333h149.333333a74.666667 74.666667 0 0 1 74.666667 74.666667v149.333333a74.666667 74.666667 0 0 1-74.666667 74.666667h-149.333333A74.666667 74.666667 0 0 1 128 821.333333v-149.333333z m74.666667-10.666667a10.666667 10.666667 0 0 0-10.666667 10.666667v149.333333a10.666667 10.666667 0 0 0 10.666667 10.666667h149.333333a10.666667 10.666667 0 0 0 10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 0-10.666667-10.666667h-149.333333z">
+                        </path>
+                        <path
+                            d="M512 128a32 32 0 0 1 32 32V512a32 32 0 0 1-32 32H160a32 32 0 0 1 0-64h320v-320A32 32 0 0 1 512 128zM512 597.333333a32 32 0 0 1 32 32v234.666667a32 32 0 0 1-64 0v-234.666667A32 32 0 0 1 512 597.333333zM595.2 512a34.133333 34.133333 0 0 1 34.133333-34.133333h268.8a68.266667 68.266667 0 0 1-68.266666 68.266666h-200.533334a34.133333 34.133333 0 0 1-34.133333-34.133333z">
+                        </path>
+                    </svg></span>
+                <div class="flex flex-col text-[15px]/5 font-bold">
+                    <span>Download the </span>
+                    <span>AliExpress app</span>
+                </div>
+            </div>
+
+            <!-- Sign in / Register -->
+            <div class="flex items-center gap-2 ">
+                <span class="text-4xl">
+                    <svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor" aria-hidden="false"
+                        focusable="false" data-spm-anchor-id="a2g0o.home.header.i0.38776278hzafGn">
+                        <path
+                            d="M512 126.357333a189.866667 189.866667 0 1 0 189.866667 189.866667 189.866667 189.866667 0 0 0-189.866667-189.866667z m-125.866667 189.866667a125.866667 125.866667 0 1 1 251.733334 0 125.866667 125.866667 0 0 1-251.733334 0zM512 650.666667c138.026667 0 236.074667 72.448 273.152 192H238.848c37.077333-119.552 135.146667-192 273.152-192z m0-64c-171.541333 0-298.325333 96.981333-339.349333 254.805333-9.002667 34.666667 18.346667 65.194667 51.093333 65.194667h576.512c32.768 0 60.096-30.506667 51.093333-65.194667C810.325333 683.648 683.52 586.666667 512 586.666667z">
+                        </path>
+                    </svg>
+                </span>
+                <div class="flex flex-col font-bold">
+                    <span>Welcome</span>
+                    <span href="#">Sign in / Register</span>
+                </div>
+            </div>
+
+            <!-- Cart -->
+            <div class="flex items-center gap-2 cursor-pointer">
+                <span class="text-4xl">
+                    <svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor" aria-hidden="false"
+                        focusable="false">
+                        <path
+                            d="M128.64 112.341333a64 64 0 0 0 52.138667 73.984l15.04 2.602667a10.666667 10.666667 0 0 1 8.810666 9.642667l34.389334 427.306666a74.666667 74.666667 0 0 0 74.453333 68.693334h460.373333a74.666667 74.666667 0 0 0 73.578667-62.08l50.24-293.226667a74.666667 74.666667 0 0 0-73.6-87.274667H273.130667l-4.693334-58.56A74.666667 74.666667 0 0 0 206.72 125.866667l-78.08-13.504z m149.653333 203.648h545.770667a10.666667 10.666667 0 0 1 10.517333 12.458667l-50.24 293.248a10.666667 10.666667 0 0 1-10.517333 8.874667h-460.373333a10.666667 10.666667 0 0 1-10.624-9.813334l-24.533334-304.768z m2.112 484.010667a53.333333 53.333333 0 1 0 106.666667 0 53.333333 53.333333 0 0 0-106.666667 0zM736 853.333333a53.333333 53.333333 0 1 1 0-106.666666 53.333333 53.333333 0 0 1 0 106.666666z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="font-bold">Cart</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex gap-6 px-6 py-3 text-sm">
+        <button class="font-medium">All Categories ⌄</button>
+        <a href="#" class="text-red-500 font-semibold">Bundle deals</a>
+        <a href="#">Choice</a>
+        <a href="#">SuperDeals</a>
+        <a href="#">AliExpress Business</a>
+        <a href="#">Home & Garden</a>
+        <a href="#">More ⌄</a>
+    </nav>
+
+    <!-- Main Yellow Section -->
+    <div class="bg-yellow-300 px-6 py-8">
+        <div class="text-lg font-semibold mb-6">Sale Ends: Jul 21, 11:59 (GMT+5)</div>
+
+        <div class="flex flex-wrap gap-6 items-start">
+            <!-- Product Card 1 -->
+            <div class="w-40 bg-white rounded-md shadow p-2">
+                <img src="https://ae01.alicdn.com/kf/Scartoon1.jpg" alt="Top deals"
+                    class="w-full h-28 object-cover rounded">
+                <div class="mt-2 text-pink-600 font-semibold text-sm">Top deals</div>
+                <div class="text-sm font-bold">PKR1,784</div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="w-40 bg-white rounded-md shadow p-2">
+                <img src="https://ae01.alicdn.com/kf/ShoeCard.jpg" alt="Men's fashion"
+                    class="w-full h-28 object-cover rounded">
+                <div class="mt-2 text-blue-600 font-semibold text-sm">Men's fashion</div>
+                <div class="text-sm font-bold">PKR1,535</div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="flex-1 flex justify-end">
+                <img src="https://img.alicdn.com/imgextra/i4/O1CN01xW9CZv1JbmPbIsb3c_!!6000000001042-2-tps-990-400.png"
+                    alt="Promo" class="h-40 object-contain">
+            </div>
+        </div>
+    </div>
+
     <section class="w-full px-4 sm:px-6 lg:px-16 xl:px-32">
         <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 mt-10 sm:mt-16">Today's deals</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-10">
@@ -286,7 +392,7 @@
                 </div>
             </div>
         </div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 mt-8 sm:mt-10">Shop by category</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 mt-8 sm:mt-10">More to love</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
             <div
                 class="w-full max-w-[200px] sm:max-w-[224px] mb-4 bg-white border border-gray-200 relative shadow-sm hover:shadow-md mx-auto">
